@@ -12,7 +12,7 @@ type propsType = {
 export default function Input(props:propsType) {
     const {name, type, placeholder, className, label, id, defaultValue, onChange} = props;
     return (
-        <div>
+        <div className="mb-4">
             {label && <label htmlFor={label}>{label}</label>}
             <input name={name} id={id} type={type} placeholder={placeholder} className={className} onChange={onChange} defaultValue={defaultValue}/>
         </div>

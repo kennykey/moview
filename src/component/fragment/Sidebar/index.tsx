@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 type propsType = {
+    className?: string;
     lists: Array<{
         title: string,
         url: string,
@@ -16,7 +17,7 @@ export default function Sidebar(props:propsType){
     const [show, setShow] = useState(true);
     const { lists } =  props;
     return (
-        <aside className="h-screen">
+        <aside className="h-100">
             <nav className={show ? "h-full flex flex-col bg-white border-r shadow-sm w-60" : "h-full flex flex-col w-20 border-r"}>
                 <div className="p-4 pb-2 flex justify-between items-center">
                     <span className={`text-2xl font-bold ${show ? "" : "hidden w-0"}`}>Moview</span>

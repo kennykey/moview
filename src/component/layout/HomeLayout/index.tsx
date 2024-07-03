@@ -12,7 +12,7 @@ const sideIcon = [
     },
     {
         title: "Data",
-        url: "/input",
+        url: "/form",
         icon: "bxs-data",
     },
     {
@@ -27,7 +27,7 @@ export default function DashboarLayout(props:PropsType){
     return(
         <div className="flex">
             <Sidebar lists={sideIcon}/>
-            <div className="w-full">
+            <div className="w-full text-center">
                 {children}
                 <Footer/>
             </div>
